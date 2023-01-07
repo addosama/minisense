@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Slime Assist</title>
+    <link rel="stylesheet" href="css/purchase.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
+    <script src="js/purchase.js"></script>
+    <style>
+        *{
+            font-family: msyh,sans-serif;
+        }
+        #title{
+            font-family: Hussar1,serif;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title" id="title">Let get started</h1>
+<br>
+<div class="buy">
+    <div class="g-container">
+        <div id="g-progress"></div>
+    </div>
+    <div class="select" id="PurchasePlan">
+        <div class="product">
+            <p style="text-align: center;font-size: 25px;margin-top:10px">Monthly Plan</p><br>
+            <p style="text-align: center;font-size: 15px">Advanced features</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Premium support</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Frequent Updates</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Advanced Client</p><br><br>
+            <div class="div2">
+                <div class="div1"><a class="a1">￥15.00</a>/One month<br>only ￥4 one week</div>
+                <button class="b1" onclick="purchase(1)">Buy</button>
+            </div>
+        </div>
+        <div class="product">
+            <p style="text-align: center;font-size: 25px;margin-top:10px">Season Plan</p><br>
+            <p style="text-align: center;font-size: 15px">Advanced features</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Premium support</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Frequent Updates</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Advanced Client</p><br><br>
+            <div class="div2">
+                <div class="div1"><a class="a1">￥30.00</a>/One season<br>only ￥10 one month</div>
+                <button class="b1" onclick="purchase(2)">Buy</button>
+            </div>
+        </div>
+        <div class="product">
+                <p style="text-align: center;font-size: 25px;margin-top:10px">Lifetime Plan</p><br>
+            <p style="text-align: center;font-size: 15px">Advanced features</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Premium support</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Lifetime Updates</p>
+            <p style="text-align: center;margin-top:10px;font-size: 15px">Advanced Client</p><br><br>
+            <div class="div2">
+                <div class="div1"><a class="a1">￥45.00</a>/Lifetime<br>no need to pay again</div>
+                <button class="b1" onclick="purchase(3)">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div id="PurchaseSelect">
+        <div class="paymentPlatform">
+            <input type="image" src="res/img/afdianlogo.png" onclick="jump(1)">
+        </div>
+    </div>
+    <div id="jump" style="text-align: center">
+        <h1 class="title" id="Jtitle">Jump</h1><br><br>
+        <button class="b1" onclick="jumpto()">Jump</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+    font-family:"Hussar1";
+    src:url("../res/fonts/HussarBoldWebEdition-xq5O.otf")
+}
+@font-face {
+    font-family: 'msyh';
+    src: url("../res/fonts/msyh.ttc");
+}
+@font-face{
+    font-family: 'icons1';
+    src:url("../res/fonts/NovICON.ttf");
+}
+@font-face {
+    font-family: 'alibaba';
+    src:url("../res/fonts/AlibabaSans-Regular.otf");
+}
