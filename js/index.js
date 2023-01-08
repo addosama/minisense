@@ -221,3 +221,12 @@ function HomeText(){
 }
 
 
+function showmenu(){
+    document.getElementById("media_menu").style.display='inline';
+    document.getElementById("media_menu").style.visibility='visible'
+}
+
+function hidemenu(){
+    document.getElementById("media_menu").style.display='none';
+    document.getElementById("media_menu").style.visibility='hidden'
+}

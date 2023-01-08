@@ -16,16 +16,35 @@
         .icon{
             font-family: icons1,serif;
         }
+
+        @media only screen and (max-width: 600px){
+
+        }
     </style>
 </head>
 <body onload="HomeText()">
 <div id="header">
-    <ul class="ulheader">
+    <ul class="ulheader" id="pc_header">
         <li class="liheader"><a href="index.html" style="margin-right:15px;"><img style="margin-left:10px" src="res/img/assistlogo.png"></a></li>
         <li class="liheader"><a class="ha" href="#home">Home</a></li>
         <li class="liheader"><a class="ha" href="#feature">Feature</a></li>
         <li class="liheader"><a class="ha" href="modules.html">Modules</a></li>
+        <li class="liheader" style="float: right;"><a class="ha" href="support">Support</a></li>
         <li class="liheader" style="float: right;"><a class="ha" href="purchase.html">Purchase</a></li>
+    </ul>
+
+    <ul class="ulheader" id="media_header">
+        <li class="liheader"><a href="index.html" style="margin-right:15px;"><img style="margin-left:10px" src="res/img/assistlogo.png"></a></li>
+        <li class="liheader" style="float:right"><a class="ha" onclick="showmenu()">Menu</a></li>
+    </ul>
+
+    <ul class="mulheader" id="media_menu">
+        <li class="mliheader"><a class="mha" href="#home">Home</a></li>
+        <li class="mliheader"><a class="mha" href="#feature">Feature</a></li>
+        <li class="mliheader"><a class="mha" href="modules.html">Modules</a></li>
+        <li class="mliheader"><a class="mha" href="support">Support</a></li>
+        <li class="mliheader"><a class="mha" href="purchase.html">Purchase</a></li>
+        <li class="mliheader" style="margin-top:150px"><a class="mha" onclick="hidemenu()">Close</a></li>
     </ul>
 </div>
 <div class="body">
@@ -35,7 +54,7 @@
         <br>
         <p id="hometext" style="font-family: alibaba"></p>
         <div style="margin-top:80px;margin-bottom: 80px;text-align: center;">
-            <button class="b1">Buy now</button>
+            <a href="purchase.html"><button class="b1">Buy now</button></a>
             <a style="color:#888888;margin-left:20px;text-decoration: none" href="#feature">Read more</a>
         </div>
     </div>
@@ -43,19 +62,19 @@
         <h1 class="hometitle">Why choose Slime Assist</h1>
         <div class="onefeature">
             <h1 style="float:left;text-align: center;line-height:50px;margin:10px;width:50px;height:50px;background-color:#0ec2a7;border-radius:5px" class="icon">J</h1>
-            <h3 style="float:left;margin-top:22px">HIGH CUSTOMIZE</h3>
+            <h3 class="mh31">HIGH CUSTOMIZE</h3>
         </div>
         <div class="onefeature">
             <h1 style="float:left;text-align: center;line-height:50px;margin:10px;width:50px;height:50px;background-color:#0ec2a7;border-radius:5px" class="icon">G</h1>
-            <h3 style="float:left;margin-top:22px">Advanced Modules</h3>
+            <h3 class="mh31">ADVANCED MODULES</h3>
         </div>
         <div class="onefeature">
             <h1 style="float:left;text-align: center;line-height:50px;margin:10px;width:50px;height:50px;background-color:#0ec2a7;border-radius:5px" class="icon">F</h1>
-            <h3 style="float:left;margin-top:22px">BEAUTIFUL GUI</h3>
+            <h3 class="mh31">BEAUTIFUL GUI</h3>
         </div>
         <div class="onefeature">
             <h1 style="float:left;text-align: center;line-height:50px;margin:10px;width:50px;height:50px;background-color:#0ec2a7;border-radius:5px" class="icon">C</h1>
-            <h3 style="float:left;margin-top:22px">SLIME ACCOUNT</h3>
+            <h3 class="mh31">SLIME ACCOUNT</h3>
         </div>
     </div>
 </div>
